@@ -1,11 +1,21 @@
 #!/usr/bin/env node
 
-var cli = require('../lib/cli');
-var util = require('../lib/util');
-var consts = require('../lib/consts');
-var argv = require('optimist').argv;
+const cli = require('../lib/cli');
+const util = require('../lib/util');
+const consts = require('../lib/consts');
+let argv = require('optimist').argv;
 
-var extra = argv._;
+let extra = argv._;
+
+require('@sex-pomelo/sex-pomelo-logger').configure({
+	appenders: {
+		console: { type: 'console' }
+	  },
+	  categories: {
+		default: { appenders: ['console'], level: 'warn' }
+	  }
+});
+
 
 if (extra && extra.length) {
 	showHelp();
@@ -18,8 +28,8 @@ if (extra && extra.length) {
 }
 
 function showHelp() {
-	var HELP_LOGIN = consts.HELP_LOGIN;
-	for (var i = 0; i < HELP_LOGIN.length; i++) {
+	let HELP_LOGIN = consts.HELP_LOGIN;
+	for (let i = 0; i < HELP_LOGIN.length; i++) {
 		util.log(HELP_LOGIN[i]);
 	}
 }
