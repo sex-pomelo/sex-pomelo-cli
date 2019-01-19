@@ -1,4 +1,4 @@
-pomelo-cli
+sex-pomelo-cli
 ========
 
 pomelo-cli is a command-line tool for [pomelo](https://github.com/NetEase/pomelo).  
@@ -6,7 +6,7 @@ you can use pomelo-cli to connect to pomelo master and do lots of things.
 
 ##Installation
 ```
-npm install -g pomelo-cli
+npm install -g @sex-pomelo/sex-pomelo-cli
 ```
 ##Usage
 Use pomelo-cli to connect to pomelo master  
