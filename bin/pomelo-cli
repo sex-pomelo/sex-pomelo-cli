@@ -7,23 +7,19 @@ let argv = require('optimist').argv;
 
 let extra = argv._;
 
-require('@sex-pomelo/sex-pomelo-logger').configure({
-	appenders: {
-		console: { type: 'console' }
-	  },
-	  categories: {
-		default: { appenders: ['console'], level: 'warn' }
-	  }
-});
+console.log( argv,extra );
 
-
-if (extra && extra.length) {
+if (extra && extra.length > 1) {
 	showHelp();
 } else {
 	if(argv['help']){
 		showHelp();
 	} else {
-		cli();
+		let cfgPath = "./startup.json"; 
+		if(extra && extra.length === 1){
+			cfgPath = extra[0];
+		}
+		cli( cfgPath );
 	}
 }
 
