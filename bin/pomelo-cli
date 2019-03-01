@@ -7,8 +7,6 @@ let argv = require('optimist').argv;
 
 let extra = argv._;
 
-console.log( argv,extra );
-
 if (extra && extra.length > 1) {
 	showHelp();
 } else {

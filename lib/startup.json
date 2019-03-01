@@ -1,16 +1,13 @@
 {
     "env": "ntest",
-    "mode": "redis",
-    "redis": {
-        "prefix":"abP",
-        "mode": "single",
-        "redisNodes":
-        {
-            "host": "192.168.2.5",
-            "port": 6479
-        },
-      "name": "mymaster",
-	  "password": ""
-    }
+    "keyPre":"sexp",
+    "redisNodes": {
+        "nodes":[
+            {"host": "192.168.2.5","port": 6479}
+        ],
+      "name": "mymaster"
+    },
+    "redisOpts":{},
+    "password": ""
 }
 
