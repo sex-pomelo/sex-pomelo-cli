@@ -1,6 +1,6 @@
 {
   "name": "@sex-pomelo/sex-pomelo-cli",
-  "version": "0.2.0-4",
+  "version": "0.2.0-5",
   "description": "Pomelo command line client for managing pomelo",
   "main": "index.js",
   "scripts": {
