@@ -3,6 +3,8 @@
 const cli = require('../lib/cli');
 const util = require('../lib/util');
 const consts = require('../lib/consts');
+const path  = require('path');
+
 let argv = require('optimist').argv;
 
 let extra = argv._;
@@ -15,7 +17,7 @@ if (extra && extra.length > 1) {
 	} else {
 		let cfgPath = "./startup.json"; 
 		if(extra && extra.length === 1){
-			cfgPath = extra[0];
+			cfgPath = path.resolve(extra[0]);
 		}
 		cli( cfgPath );
 	}
