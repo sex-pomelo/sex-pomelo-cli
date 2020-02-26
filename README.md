@@ -27,7 +27,7 @@ Enjoy it:
 
 ## Links
 [user level control](https://github.com/NetEase/pomelo-admin#user-level-control)  
-[commands wiki](https://github.com/NetEase/pomelo-cli/wiki/pomelo-cli-man-page)
+[commands wiki](https://github.com/sex-pomelo/sex-pomelo-cli/wiki/sex-pomelo-cli-man-page)
 
 ## License
 
