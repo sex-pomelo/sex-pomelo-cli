@@ -1,12 +1,15 @@
 {
   "name": "@sex-pomelo/sex-pomelo-cli",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Pomelo command line client for managing pomelo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sex-pomelo/sex-pomelo-cli"
+  },
   "keywords": [
     "pomelo",
     "command",
@@ -17,18 +20,18 @@
     "pomelo-cli": "./bin/pomelo-cli"
   },
   "dependencies": {
-    "@sex-pomelo/sex-pomelo-admin": "^1.0.2",
-    "@sex-pomelo/sex-pomelo-logger": "^0.1.9",
-    "async": "^2.6.1",
-    "cliff": ">=0.1.10",
-    "optimist": ">=0.6.0"
+    "@sex-pomelo/sex-pomelo-admin": "^1.0.9",
+    "@sex-pomelo/sex-pomelo-logger": "^0.1.13",
+    "clifflite": "^0.0.4",
+    "minimist": "^1.2.5"
   },
   "author": "fantasyni",
-  "contributors":[
+  "contributors": [
     {
       "name": "shudingbo",
       "email": "shudingbo@qq.com",
       "url": "https://github.com/shudingbo"
-    }],
+    }
+  ],
   "license": "MIT"
 }
